@@ -51,9 +51,9 @@ public:
 class PaymentProcessor {
 public:
 
-    void process(paymentMethod* payment, double amount) {
+    void process(paymentMethod & payment, double amount) {
 
-        payment->pay(amount);
+        payment.pay(amount);
 
     }
 
@@ -66,9 +66,9 @@ int main(){
     DebitCardPayment debit;
     UPIPayment upi;
 
-    processor.process(& credit, 10000);
-    processor.process(& debit, 5000);
-    processor.process(& upi , 2000);
+    processor.process( credit, 10000);
+    processor.process( debit, 5000);
+    processor.process( upi , 2000);
     
     return 0;
 
