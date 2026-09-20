@@ -48,6 +48,14 @@ public:
     }
 };
 
+class NetBanking: public paymentMethod{
+public: 
+    void pay(double amount){
+        cout<<"processing payment through netBanking: ₹"<<amount<<endl;
+    }
+
+};
+
 class PaymentProcessor {
 public:
 
@@ -65,10 +73,12 @@ int main(){
     CreditCardPayment credit;
     DebitCardPayment debit;
     UPIPayment upi;
+    NetBanking netBank;
 
     processor.process( credit, 10000);
     processor.process( debit, 5000);
     processor.process( upi , 2000);
+    processor.process( netBank , 6000);
     
     return 0;
 
