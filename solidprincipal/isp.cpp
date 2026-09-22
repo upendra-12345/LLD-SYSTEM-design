@@ -4,20 +4,24 @@ using namespace std;
 class Printer{
 public:
     virtual void print()=0;
+    virtual ~Printer(){}
 
 };
 class Flex{
 public:
     virtual void flex()=0;
+    virtual ~Flex(){}
 };
 class Scanner{
 public:
     virtual void scan()=0;
+    virtual ~Scanner(){}
 };
 
 class Staple{
 public:
     virtual void staple()=0;
+    virtual ~Staple(){}
 };
 
 class SimplePrinter: public Printer{

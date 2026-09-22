@@ -1,6 +1,6 @@
 #include<iostream>
 using namespace std;
-
+// LISKOV SUBSITUTION PRINCIPLE
 class Drive{
 public: 
     virtual void drive()=0;

@@ -1,5 +1,6 @@
 #include<iostream>
 using namespace std;
+//single responsibility principle
 class Order{
 public:
     double price;
