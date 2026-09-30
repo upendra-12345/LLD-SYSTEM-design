@@ -1,6 +1,6 @@
 #include<iostream>
 using namespace std;
-// INVERSION SEGREGATION PRINCIPLE
+// INterface SEGREGATION PRINCIPLE
 class Printer{
 public:
     virtual void print()=0;
