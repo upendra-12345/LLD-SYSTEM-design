@@ -1,4 +1,6 @@
-#include<iostream>
+#include <iostream>
+#include <string>
+#include<vector>
 using namespace std;
 //Agregation relationship
 class Employee{
